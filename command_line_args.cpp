@@ -8,6 +8,6 @@ int main(int argc, char **argv) {  // argc: argument count, argv: argument vecto
     cout << "Number of args passed: " << argc << endl;
 
     for (int i = 0; i < argc; i++)  // for loop starting from 0, going to argc, incrementing
-        cout << "Passed in " << argv[i] << endl;
+        cout << "Passed in " << argv[i] << endl;  // the first arg is always the file path
 
 }
