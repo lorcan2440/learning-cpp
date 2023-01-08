@@ -26,14 +26,13 @@ int main() {
     int age;
 
     std::cout << "Please enter your first name and age, separated by a space. ";
-    std::cin >> firstname >> age;
+    std::cin >> firstname >> age;  // multiple inputs separated by single space, goes to each var
 
     std::cout << "Please enter your full name, with space(s). ";
     cin.ignore();  // ignore trailing newline from previous input
     std::getline(std::cin, fullname);  // comes from <string>, allows entry with
                                        // spaces without going to multiple args
     
-    int first_count = numVowels(firstname);
     int full_count = numVowels(fullname);
 
     cout << "Hello, " << firstname << ". You are " << age << 
